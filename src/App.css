@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sky-background {
+  /*background-color: #b87dec;*/
+  background-color: #8b5fee;
+}
+.service-seperator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.connection-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.connection-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(213% + 1.3px);
+  height: 145px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.connection-divider-top .shape-fill {
+  fill: #f9f1fd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.connection-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.connection-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 145px;
 }
 
-.App-link {
-  color: #61dafb;
+.connection-divider-bottom .shape-fill {
+  fill: #ffffff;
+}
+.service-seperator svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-seperator .shape-fill {
+  fill: #f9f1fd;
+}
+.help-background {
+  background-color: rgba(223, 187, 242, 0.2);
+}
+.price-background {
+  background-color: #414177;
+}
+
+.hero-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.hero-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 108px;
+  transform: rotateY(180deg);
+}
+
+.hero-divider .shape-fill {
+  fill: #ffffff;
 }

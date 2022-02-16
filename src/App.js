@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Connection from './sections/Connection';
+import Hero from './sections/Hero.js';
+import Register from './sections/Register';
+import Services from './sections/Services';
+import Steps from './sections/Steps';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='font-sans text-blue-hero'>
+      <Hero />
+      <Services />
+      <Steps />
+      <Connection />
+      <Register />
+      <div className=''></div>
     </div>
   );
 }
